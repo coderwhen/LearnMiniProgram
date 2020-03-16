@@ -5,9 +5,26 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    name: '张燕冲',
+    age: 18,
+    students: [
+      { id: 1, name: '11' },
+      { id: 2, name: '12' },
+      { id: 3, name: '13' },
+      { id: 4, name: '14' },
+    ],
+    counter: 0
   },
-
+  handleClick1() {
+    this.setData({
+      counter: this.data.counter + 1
+    })
+  },
+  handleClick2() {
+    this.setData({
+      counter: this.data.counter - 1
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

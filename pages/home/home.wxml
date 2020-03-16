@@ -1,2 +1,16 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+
+<!-- 小程序的数据绑定 -->
+<view>我的名字：{{name}}</view>
+<view>我的年龄：{{age}}</view>
+
+
+
+
+<!-- 列表展示 -->
+<view wx:for="{{students}}" wx:key="index">id:{{item.id}}----name:{{item.name}}</view>
+
+<!-- 事件监听 -->
+<view>当前计数{{counter}}</view>
+<button size="mini" bindtap="handleClick1">+</button>
+<button size="mini" bindtap="handleClick2">-</button>
