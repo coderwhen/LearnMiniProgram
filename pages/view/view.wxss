@@ -1,0 +1,10 @@
+/* pages/view/view.wxss */
+
+.hover-view {
+  background: #f00;
+  font-size: 20px;
+}
+
+.hover-view2 {
+  background: blue;
+}

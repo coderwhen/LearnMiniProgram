@@ -1,0 +1,49 @@
+<!--pages/image/image.wxml-->
+
+<!-- 1.image的基本使用 -->
+<!-- 
+  重点：
+  1.image组件可以写成单标签，也可以修成双标签
+  2.image组件默认有自己的大小 320*240
+ -->
+
+ <!-- <image/> -->
+
+
+ <!-- 2.src图片路径（本地图片 | 远程图片） -->
+ <text>远程路径</text>
+ <image src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"/>
+ <text>\n本地路径绝对路径</text>
+ <image src="/assets/image/aijing1.jpg"/>
+ <text>\n本地路径相对路径</text>
+ <image src="../../assets/image/aijing1.jpg"/>
+
+ <!-- 3.相册图片导入 -->
+
+ <button bindtap="handleImage">从相册选择图片</button>
+ <image src="{{imagePath}}"/>
+
+ <!-- 4.lazy-load图片懒加载 -->
+<text>\n图片懒加载</text>
+ <image
+      wx:key="index"
+      lazy-load="{{true}}" 
+      bindload="imageLoad"
+      src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"/>
+
+
+  <!-- 5.show-menu-by-longpress长按出现识别小程序码 -->
+  <text>\n长按识别小程序码</text>
+  <image src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg" show-menu-by-longpress/>
+
+  <!-- 6.mode图片裁剪、缩放的模式 -->
+  <text>\nmode图片裁剪、缩放的模式</text>
+
+  <block wx:for="{{array}}" wx:key="index">
+     <image src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg" mode="{{item.mode}}"/>
+     <text>\n{{item.text}}</text>
+  </block>
+
+
+  
+  

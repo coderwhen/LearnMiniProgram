@@ -1,0 +1,37 @@
+<!--pages/view/view.wxml-->
+
+
+<!-- 1.基本使用 -->
+<view>哈哈哈</view>
+<view>呵呵呵</view>
+
+<!-- 2.hover-class属性使用 -->
+<view hover-class="hover-view">
+  hover-class哈哈哈哈
+</view>
+
+<!-- 3.hover-start-time点击多长出现效果 -->
+<view hover-class="hover-view" hover-start-time="500">
+  hover-start-time哈哈哈哈
+</view>
+
+<!-- 4.hover-stay-time松开后多久结束效果 -->
+<view hover-class="hover-view" hover-start-time="500" hover-stay-time="700">
+  hover-stay-time哈哈哈哈
+</view>
+
+
+<view hover-class="hover-view2">
+  <view hover-class="hover-view"
+        hover-stop-propagation="true">
+    阻止祖先冒泡
+  </view>
+  asdhajkshdajkshdjkashdkjh
+</view>
+
+<view hover-class="hover-view2">
+  <view hover-class="hover-view">
+    不阻止祖先冒泡
+  </view>
+  asdhajkshdajkshdjkashdkjh
+</view>

@@ -1,0 +1,28 @@
+<!--pages/scroll/scroll.wxml-->
+
+
+
+<text>水平滚动</text>
+<scroll-view class="scroll1" scroll-x>
+  <view wx:for="{{10}}" wx:key="index" class="item1">
+  {{item}}
+  </view>
+</scroll-view>
+
+
+
+<text>垂直滚动</text>
+<scroll-view class="scroll2" scroll-y>
+  <view wx:for="{{10}}" wx:key="index" class="item2">
+  {{item}}
+  </view>
+</scroll-view>
+
+
+
+<text>补充相关\n事件</text>
+<scroll-view class="scroll2" bindscroll="handleScroll" scroll-y>
+  <view wx:for="{{10}}" wx:key="index" class="item2">
+  {{item}}
+  </view>
+</scroll-view>

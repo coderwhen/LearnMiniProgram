@@ -1,0 +1,19 @@
+<!--pages/input/input.wxml-->
+
+<!-- 1.基本使用 -->
+<input/>
+
+<!-- 2.value属性的使用 -->
+<input value="hahaha"/>
+
+<!-- 3.type属性的使用 -->
+<input type="number"/>
+
+<!-- 4.password属性的使用 密文 -->
+<input password/>
+
+<!-- 5.placeholder 站位文字 -->
+<input placeholder="请输入你的内容"/>
+
+<!-- 6.input事件绑定 -->
+<input bindinput="handleInput" bindfocus="handleFocus" bindblur="handleBlur"/>

@@ -1,0 +1,28 @@
+<!--pages/text/text.wxml-->
+
+
+<!-- 1.基本使用 -->
+<text>Hello coderwhen\n</text>
+<text>你好小程序\n</text>
+
+
+
+<!-- 2.selectable:ture -->
+<!-- 默认情况下文本不可选中 -->
+<text selectable="{{true}}">
+我是可选中的
+</text>
+
+<!-- 3.space决定空格大小 -->
+<!-- nbsp默认大小 -->
+<!-- emsp一个中文字符大小 -->
+<!-- ensp半个中文字符大小 -->
+<text>Hello coderwhen\n</text>
+<text space="nbsp">Hello coderwhen\n</text>
+<text space="emsp">Hello coderwhen\n</text>
+<text space="ensp">Hello coderwhen\n</text>
+
+<!-- 4.decode是否解码 -->
+
+<text decode>5 &gt; 7</text>
+<text>5 &gt; 7</text>
