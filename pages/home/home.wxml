@@ -1,2 +1,14 @@
 <!--pages/home/home.wxml-->
 <text>pages/home/home.wxml</text>
+
+<!-- 按钮获取用户信息 -->
+<button 
+  size="mini" 
+  open-type="getUserInfo"
+  bindgetuserinfo="handleUserInfo">
+  获取用户
+</button>
+
+<!-- 展示开放展示用户信息 -->
+<open-data type="userNickName"/>
+<open-data type="userAvatarUrl"/>
