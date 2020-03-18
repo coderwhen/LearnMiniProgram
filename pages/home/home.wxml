@@ -1,2 +1,21 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<view>条件渲染</view>
+
+<!-- 1.wx:if指令 -->
+
+<view wx:if="{{true}}">1</view>
+<view wx:if="{{false}}">1</view>
+
+<!-- 2.hidden属性 -->
+<view hidden="{{true}}">1111</view>
+<view hidden="{{false}}">1111</view>
+
+<view>列表渲染（数组、数字、字符串）</view>
+<!-- 3. -->
+<view wx:for="{{['abc','cba','nba']}}" wx:key="index">{{item}}</view>
+
+<view wx:for="{{10}}" wx:key="item">{{item}}</view>
+
+<view wx:for="字符串" wx:key="item">{{item}}</view>
+
+<!-- wx:for-item   wx:for-index  取别名 -->
