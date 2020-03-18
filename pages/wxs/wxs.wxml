@@ -18,7 +18,7 @@
     sum: sum
   }
 </wxs> -->
-
+<!-- 2.导入必须使用相对路径 -->
 <wxs src="../../wxs/info.wxs" module="info"/>
 
 <view>{{info.username}}</view>
