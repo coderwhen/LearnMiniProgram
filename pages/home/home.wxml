@@ -1,2 +1,24 @@
 <!--pages/home/home.wxml-->
 <text>pages/home/home.wxml</text>
+
+
+<view class="box"
+    bind:tap="handleTap"
+    bind:touchstart="handleTouchStart"
+    bind:touchmove="handleTouchMove"
+    bind:touchend="handleTouchEnd"
+    bind:longpress="handleLongPress">
+</view>
+
+<!-- touches记录当前手指    changedTouches记录改变的手指 -->
+<!-- currentTarget存触发的对象   target存触发的事件的元素 -->
+<view id="out" class="outView" bind:tap="outViewTap">
+  <view id="inner" class="innerView" bind:tap="innerViewTap"></view>
+</view>
+
+<!-- catch:阻止   capture-catch阻止事件捕获    catch-阻止事件冒泡   在捕获阶段如果阻止  直接冒泡就不在执行 -->
+<view class="one" bindtap="onetap1" capture-bind:tap="captrueone1">
+  <view class="two" bindtap="onetap2" capture-bind:tap="captrueone2">
+    <view class="three" bindtap="onetap3" capture-bind:tap="captrueon3"></view>
+  </view>
+</view>

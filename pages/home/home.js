@@ -7,60 +7,43 @@ Page({
   data: {
 
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  handleTap() {
+    console.log('handleTap')
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  handleTouchStart() {
+    console.log('handleTouchStart')
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+  handleTouchMove() {
+    console.log('handleTouchMove')
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
+  handleTouchEnd() {
+    console.log('handleTouchEnd')
   },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
+  handleLongPress() {
+    console.log('handleLongPress')
   },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
+  outViewTap(event) {
+    console.log(event)
   },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
+  innerViewTap(event) {
+    console.log(event)
   },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  onetap1() {
+    console.log('onetap1')
+  },
+  captrueone1() {
+    console.log('captrueone1')
+  },
+  onetap2() {
+    console.log('onetap2')
+  },
+  captrueone2() {
+    console.log('captrueone2')
+  },
+  onetap3() {
+    console.log('onetap3')
+  },
+  captrueon3() {
+    console.log('captrueone3')
   }
 })

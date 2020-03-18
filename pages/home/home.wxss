@@ -1,1 +1,38 @@
 /* pages/home/home.wxss */
+
+
+.box {
+  width: 300rpx;
+  height: 300rpx;
+  background: yellow
+}
+
+.outView {
+  width: 400rpx;
+  height: 400rpx;
+  background: #f00;
+}
+
+.innerView {
+  height: 200rpx;
+  width: 200rpx;
+  background: #00f;
+}
+
+.one {
+  width: 600rpx;
+  height: 600rpx;
+  background: #f00;
+}
+
+.two {
+  height: 400rpx;
+  width: 400rpx;
+  background: #0f0;
+}
+
+.three {
+  height: 200rpx;
+  width: 200rpx;
+  background: #00f;
+}
