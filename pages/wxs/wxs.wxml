@@ -1,0 +1,25 @@
+<!--pages/wxs/wxs.wxml-->
+<text>wxs</text>
+
+<!-- wxs使用方式 -->
+
+<!-- 页面中直接写入   必须指定module  必须  导出 -->
+<!-- <wxs module="info">
+  var username = 'coderwhen'
+  var userpwd = 'zychhazl99'
+
+  function sum(num1, num2) {
+    return num1 + num2
+  }
+
+  module.exports = {
+    username: username,
+    userpwd: userpwd,
+    sum: sum
+  }
+</wxs> -->
+
+<wxs src="../../wxs/info.wxs" module="info"/>
+
+<view>{{info.username}}</view>
+<view>{{info.sum(200,300)}}</view>

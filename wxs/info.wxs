@@ -1,0 +1,12 @@
+var username = 'coderwhen'
+var userpwd = 'zychhazl99'
+
+function sum(num1, num2) {
+  return num1 + num2
+}
+
+module.exports = {
+  username: username,
+  userpwd: userpwd,
+  sum: sum
+}
