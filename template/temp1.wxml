@@ -1,0 +1,6 @@
+<template name="temp1">
+  <view>
+    <button size="mini">按钮</button>
+    <text>文本</text>
+  </view>
+</template>
