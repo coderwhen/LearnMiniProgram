@@ -1,2 +1,3 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<wh-tab-contorl 
+tabs="{{['新品','精选','热卖','haha','asda']}}" bind:tabChange="handleTabChange"/>

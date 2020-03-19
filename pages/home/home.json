@@ -1,3 +1,5 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "wh-tab-contorl": "/component/tabcontorl/tabcontorl"
+  }
 }
