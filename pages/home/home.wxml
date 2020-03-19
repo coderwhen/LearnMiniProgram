@@ -1,2 +1,28 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<view>
+  1.组件的基本使用
+</view>
+
+<my-com/>
+
+
+<view>2.组件的嵌套使用</view>
+<my-all-com/>
+
+
+<view>3.组件的传值</view>
+<my-prop-com title="标题1"/>
+<my-prop-com title="标题2"/>
+<my-prop-com title="标题3"/>
+<my-prop-com/>
+
+
+<view>4.组件的样式传递</view>
+<my-style-com titleclass="red"/>
+<my-style-com titleclass="yellow"/>
+<my-style-com titleclass="blue"/>
+
+
+<view>5.子组件的事件传递</view>
+<view>当前记录的数{{counter}}</view>
+<my-event-com bind:addHandle="addHandle"/>

@@ -1,0 +1,2 @@
+<!--component/my-event-com/my-event-com.wxml-->
+<button size="mini" bind:tap="handleClick">我是子组件的按钮</button>

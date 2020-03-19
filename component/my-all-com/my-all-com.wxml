@@ -1,0 +1,5 @@
+<!--component/my-all-com/my-all-com.wxml-->
+<text>component/my-all-com/my-all-com.wxml</text>
+
+<my-com/>
+<my-style-com/>

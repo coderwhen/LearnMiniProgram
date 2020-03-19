@@ -1,0 +1,2 @@
+<!--component/my-style-com/my-style-com.wxml-->
+<view class="title titleclass">{{msg}}</view>

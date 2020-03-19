@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "my-com": "/component/my-com/my-com",
+    "my-style-com": "/component/my-style-com/my-style-com"
+  }
+}

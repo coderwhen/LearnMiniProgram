@@ -1,3 +1,9 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "my-com": "/component/my-com/my-com",
+    "my-all-com": "/component/my-all-com/my-all-com",
+    "my-prop-com": "/component/my-prop-com/my-prop-com",
+    "my-style-com": "/component/my-style-com/my-style-com",
+    "my-event-com": "/component/my-event-com/my-event-com"
+  }
 }
