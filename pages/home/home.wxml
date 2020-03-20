@@ -1,4 +1,8 @@
 <!--pages/home/home.wxml-->
 
-<wh-tab-contorl 
+<!-- 获取组件对象 -->
+
+<button bind:tap="handleChildComp">获取组件对象当前选中的index</button>
+
+<wh-tab-contorl id='tab'
 tabs="{{['新品','精选','热卖','haha','asda']}}" bind:tabChange="handleTabChange"/>
