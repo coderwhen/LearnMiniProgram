@@ -1,0 +1,15 @@
+<!--component/my-m-slot/my-m-slot.wxml-->
+
+
+<view>
+  我是含有多个slot组件
+  <view class="slot1">
+    <slot name="slot1" />
+  </view>
+  <view class="slot2">
+    <slot name="slot2" />
+  </view>
+  <view class="slot3">
+    <slot name="slot3" />
+  </view>
+</view>

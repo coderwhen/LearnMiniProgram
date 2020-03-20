@@ -1,0 +1,7 @@
+<!--component/my-slot.wxml-->
+
+
+<view>
+我是含有一个slot的组件
+<slot/>
+</view>

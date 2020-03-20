@@ -1,2 +1,26 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<view>自定义组件插槽</view>
+<!-- 1.基本使用 -->
+<my-slot>
+  <button>我是home的按钮</button>
+</my-slot>
+
+<my-slot>
+  <slider/>
+</my-slot>
+
+
+<view>2.具名插槽的使用</view>
+<!-- 2具名插槽的使用
+    使用多个slot需在组件中options加入multipleSlots为true
+ -->
+<my-m-slot>
+  <button slot="slot1">我是按钮</button>
+  <button slot="slot2">我是按钮</button>
+  <button slot="slot3">我是按钮</button>
+</my-m-slot>
+
+<my-m-slot>
+   <button slot="slot1">我是按钮</button>
+   <slider slot="slot2"/>
+</my-m-slot>
