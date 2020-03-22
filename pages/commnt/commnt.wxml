@@ -1,0 +1,5 @@
+<!--pages/commnt/commnt.wxml-->
+<text>pages/commnt/commnt.wxml</text>
+
+<navigator open-type="navigateBack" delta="2">跳回首页</navigator>
+<button bind:tap="back"></button>

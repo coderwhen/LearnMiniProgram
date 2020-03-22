@@ -1,0 +1,5 @@
+<!--pages/detail/detail.wxml-->
+<text>pages/detail/detail.wxml</text>
+
+
+<navigator url="/pages/commnt/commnt">跳转至评论页</navigator>

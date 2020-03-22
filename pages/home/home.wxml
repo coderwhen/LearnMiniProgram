@@ -1,2 +1,9 @@
 <!--pages/home/home.wxml-->
 <text>pages/home/home.wxml</text>
+<navigator url="/pages/detail/detail">跳转详情页（navigator）</navigator>
+<navigator url="/pages/detail/detail" open-type="redirect">跳转详情页（redirect）</navigator>
+<navigator url="/pages/about/about" open-type="switchTab">跳转关于页（switchTab）</navigator>
+<navigator url="/pages/detail/detail" open-type="reLaunch">跳转详情页（redirect）</navigator>
+<text>{{name}}</text>
+
+<button bind:tap="to">跳转</button>
