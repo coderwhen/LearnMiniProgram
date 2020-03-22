@@ -60,7 +60,12 @@ Page({
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () {
-
+  onShareAppMessage: function (options) {
+    console.log(options)
+    return {
+      title: '我是分享的标题',
+      path: '/pages/home/home',   //我是分享的路径必须以绝对路径
+      imageUrl: 'http://192.168.1.105:8000/image/goods/nz_xssy.jpg'        //我是分享的图片   默认以页面作为    可以是本地图片  也可以是远程图片
+    }
   }
 })
