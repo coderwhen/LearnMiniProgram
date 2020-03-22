@@ -1,2 +1,9 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<text>微信小程序系统api</text>
+
+
+<!-- toast -->
+<button bind:tap="showToast">showToast</button>
+<button bind:tap="showModal">showModal</button>
+<button bind:tap="showLoading">showLoading</button>
+<button bind:tap="showAction">showAction</button>
